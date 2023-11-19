@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Gym Fitnees</title>
+    <link rel="stylesheet" href="/assets/css/matricula.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+        <nav>
+            <a href="inserir_cpf.html">Matricular Aluno</a>
+            <a href="">Cadastrar Turmas</a>
+            <a href="">Visualizar turmas</a>
+        </nav>
+    </div>
+    <div class="main">
+        <H1 id="titulo" style="display: none;">Matrícula</H1>
+        <div class="container">
+            <p id="sem_matricula"display="none">Nenhuma matrícula encontrada</p>
+            <form class="matricula-form" style="display: none;" id="formulario">
+                <label for="nrMatricula">Número de Matrícula:</label>
+                <input type="text" id="nrMatricula" name="nrMatricula" placeholder="${nrMatricula}" disabled><br>
+        
+                <label for="aluno">Nome do Aluno:</label>
+                <input type="text" id="aluno" name="aluno" placeholder="${aluno.nomeAluno}" disabled><br>
+        
+                <label for="dataMat">Data da Matrícula:</label>
+                <input type="text" id="dataMat" name="dataMat" placeholder="${dataMat}" disabled><br>
+        
+                <label for="valorTotal">Valor Total:</label>
+                <input type="text" id="valorTotal" name="valorTotal" placeholder="${valorTotal}" disabled><br>
+        
+                <label for="valorMensal">Valor Mensal:</label>
+                <input type="text" id="valorMensal" name="valorMensal" placeholder="${valorMensal}" disabled><br>
+        
+                <label for="nrParcelas">Número de Parcelas:</label>
+                <input type="text" id="nrParcelas" name="nrParcelas" placeholder="${nrParcelas}" disabled><br>
+        
+                <label for="dataVencimentoPag">Data de Vencimento do Pagamento:</label>
+                <input type="text" id="dataVencimentoPag" name="dataVencimentoPag" placeholder="${dataVencimentoPag}" disabled><br>
+        
+                <label for="statusMatricula">Status da Matrícula:</label>
+                <input type="text" id="statusMatricula" name="statusMatricula" placeholder="${statusMatricula}" disabled><br>
+                <div class="select">
+                    <span class="turmasListar">Turmas</span>
+                    <select name="turmas" id="turmasListar">
+                        <option selected disabled>turmas</option>
+                       
+                    </select>
+                    </div>
+                </form>
+
+            <button style="display: none;" id="adicionar">Adicionar Nova Turma</button>
+
+        </div>
+    </div>
+    <script src="/scripts/matricula.js"></script>
+</body>
+</html>
